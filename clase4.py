@@ -1,138 +1,138 @@
-# # Operadores de comparación y lógicos.
+# Operadores de comparación y lógicos.
 
-# booleano = 10 == 10
-# print("El valor de la comparación es:", booleano)
-# booleano = 10 == 11
-# print("El valor de la comparación es:", booleano)
-# booleano = 10 != 11
-# print("El valor de la comparación es:", booleano)
+booleano = 10 == 10
+print("El valor de la comparación es:", booleano)
+booleano = 10 == 11
+print("El valor de la comparación es:", booleano)
+booleano = 10 != 11
+print("El valor de la comparación es:", booleano)
 
-# # Operadores lógicos
-# booleano_and = (10 == 10) and (11 > 10)
-# print("El valor de la comparación AND es:", booleano_and)
+# Operadores lógicos
+booleano_and = (10 == 10) and (11 > 10)
+print("El valor de la comparación AND es:", booleano_and)
 
-# # Tabla de verdad del operador AND
-# # print("Tabla de verdad del operador AND:")
-# # print("True and True =", True and True)
-# # print("True and False =", True and False)
-# # print("False and True =", False and True)
-# # print("False and False =", False and False)
+# Tabla de verdad del operador AND
+# print("Tabla de verdad del operador AND:")
+# print("True and True =", True and True)
+# print("True and False =", True and False)
+# print("False and True =", False and True)
+# print("False and False =", False and False)
 
-# booleano_or = (10 == 10) or (11 < 10)
-# print("El valor de la comparación OR es:", booleano_or)
-# # Tabla de verdad del operador OR
-# # print("Tabla de verdad del operador OR:")
-# # print("True or True =", True or True)
-# # print("True or False =", True or False)
-# # print("False or True =", False or True)
-# # print("False or False =", False or False)
+booleano_or = (10 == 10) or (11 < 10)
+print("El valor de la comparación OR es:", booleano_or)
+# Tabla de verdad del operador OR
+# print("Tabla de verdad del operador OR:")
+# print("True or True =", True or True)
+# print("True or False =", True or False)
+# print("False or True =", False or True)
+# print("False or False =", False or False)
 
-# # negación
-# booleano_not = not (10 == 10)
-# print("El valor de la comparación NOT es:", booleano_not)
-
-
-# # Control de flujo
-# edad = int(input("Por favor ingresa tu edad: "))
-# if edad >= 18:
-#     print("Eres mayor de edad.")
-# else:
-#     print("Eres menor de edad.")
-
-# edad = int(input("Por favor ingresa tu edad: "))
-# dinero = float(input("Por favor ingresa la cantidad de dinero que tienes: "))
-# if edad >= 18:
-#     if dinero >= 10000:
-#         print("Puede entrar a la fiesta.")
-#     else:
-#         print("No tiene suficiente dinero.")
-# else:
-#     print("No puede entrar a la fiesta, es menor de edad.")
+# negación
+booleano_not = not (10 == 10)
+print("El valor de la comparación NOT es:", booleano_not)
 
 
-# edad = int(input("Por favor ingresa tu edad: "))
-# dinero = float(input("Por favor ingresa la cantidad de dinero que tienes: "))
-# if edad >= 18 and dinero >= 10000:
-#     print("Puede entrar a la fiesta.")
-# else:
-#     print("No puede entrar a la fiesta.")
+# Control de flujo
+edad = int(input("Por favor ingresa tu edad: "))
+if edad >= 18:
+    print("Eres mayor de edad.")
+else:
+    print("Eres menor de edad.")
 
-# Ciclo for
-
-# for i in range(5):
-#     print("Iteración número:", i)
-
-# tabla_de_multiplicar = int(input("Por favor ingresa un número para ver su tabla de multiplicar: "))
-# for i in range(0, 11):
-#     resultado = tabla_de_multiplicar * i
-#     print(f"{tabla_de_multiplicar} x {i} = {resultado}")
-
-# lista_uno = [2, 4, 6, 8, 10]
-# for numero in lista_uno:
-#     print("Número de la lista:", numero)
-
-# diccionario = { 1: "uno", 2: "dos", 3: "tres" }
-# for clave in diccionario:
-#     print(f"Clave: {clave}, Valor: {diccionario[clave]}")
-
-# for clave in diccionario.keys():
-#     print(f"Clave: {clave}")
-
-# for dato in diccionario.items():
-#     print(dato)
-
-# for dato in diccionario.values():
-#     print(dato)
-
-# # Ciclo while
-
-# monedas = 5
-# while monedas > 0:
-#     print("Tienes", monedas, "monedas.")
-#     monedas -= 1 # Equivalente a monedas = monedas - 1
-
-# peticion = input("Escribe 's' para terminar el ciclo: ")
-# while peticion != 's':
-#     peticion = input("Escribe 's' para terminar el ciclo: ")
-
-# # range
-# for numero in range(10):
-#     print("Número:", numero)
-
-# for numero in range(3, 10):
-#     print("Número:", numero)
-
-# for numero in range(1, 10, 2):
-#     print("Número impar:", numero)
+edad = int(input("Por favor ingresa tu edad: "))
+dinero = float(input("Por favor ingresa la cantidad de dinero que tienes: "))
+if edad >= 18:
+    if dinero >= 10000:
+        print("Puede entrar a la fiesta.")
+    else:
+        print("No tiene suficiente dinero.")
+else:
+    print("No puede entrar a la fiesta, es menor de edad.")
 
 
-# for numero in range(2, 10, 2):
-#     print("Número par:", numero)
+edad = int(input("Por favor ingresa tu edad: "))
+dinero = float(input("Por favor ingresa la cantidad de dinero que tienes: "))
+if edad >= 18 and dinero >= 10000:
+    print("Puede entrar a la fiesta.")
+else:
+    print("No puede entrar a la fiesta.")
 
-# # Crear una lista con números del 1 al 99 usando range
+Ciclo for
 
-# lista = list(range(1, 100))
-# print("Lista de números del 1 al 99:", lista)
+for i in range(5):
+    print("Iteración número:", i)
 
-# # Usar enumerate para obtener índice e ítem de una lista
+tabla_de_multiplicar = int(input("Por favor ingresa un número para ver su tabla de multiplicar: "))
+for i in range(0, 11):
+    resultado = tabla_de_multiplicar * i
+    print(f"{tabla_de_multiplicar} x {i} = {resultado}")
 
-# lista = ["a", "b", "c", "d", "e"]
-# for indice, item in enumerate(lista):
-#     print(f"Índice: {indice}, Ítem: {item}")
+lista_uno = [2, 4, 6, 8, 10]
+for numero in lista_uno:
+    print("Número de la lista:", numero)
 
-# # zip para combinar varias listas
+diccionario = { 1: "uno", 2: "dos", 3: "tres" }
+for clave in diccionario:
+    print(f"Clave: {clave}, Valor: {diccionario[clave]}")
 
-# nombres = ["Ana", "Luis", "Carlos", "Marta"]
-# edades = [23, 30, 18, 25]
-# ciudades = ["Madrid", "Barcelona", "Valencia", "Sevilla"]
+for clave in diccionario.keys():
+    print(f"Clave: {clave}")
 
-# cobinacion_uno = zip(nombres, edades)
-# print(f"Combinación de nombres y edades: {cobinacion_uno}")
-# combinacion_dos = list(zip(nombres, edades, ciudades))
-# print(f"Combinación de nombres, edades y ciudades: {combinacion_dos}")
+for dato in diccionario.items():
+    print(dato)
 
-# for nombre, edad, ciudad in combinacion_dos:
-#     print(f"{nombre} tiene {edad} años y vive en {ciudad}.")
+for dato in diccionario.values():
+    print(dato)
+
+# Ciclo while
+
+monedas = 5
+while monedas > 0:
+    print("Tienes", monedas, "monedas.")
+    monedas -= 1 # Equivalente a monedas = monedas - 1
+
+peticion = input("Escribe 's' para terminar el ciclo: ")
+while peticion != 's':
+    peticion = input("Escribe 's' para terminar el ciclo: ")
+
+# range
+for numero in range(10):
+    print("Número:", numero)
+
+for numero in range(3, 10):
+    print("Número:", numero)
+
+for numero in range(1, 10, 2):
+    print("Número impar:", numero)
+
+
+for numero in range(2, 10, 2):
+    print("Número par:", numero)
+
+# Crear una lista con números del 1 al 99 usando range
+
+lista = list(range(1, 100))
+print("Lista de números del 1 al 99:", lista)
+
+# Usar enumerate para obtener índice e ítem de una lista
+
+lista = ["a", "b", "c", "d", "e"]
+for indice, item in enumerate(lista):
+    print(f"Índice: {indice}, Ítem: {item}")
+
+# zip para combinar varias listas
+
+nombres = ["Ana", "Luis", "Carlos", "Marta"]
+edades = [23, 30, 18, 25]
+ciudades = ["Madrid", "Barcelona", "Valencia", "Sevilla"]
+
+cobinacion_uno = zip(nombres, edades)
+print(f"Combinación de nombres y edades: {cobinacion_uno}")
+combinacion_dos = list(zip(nombres, edades, ciudades))
+print(f"Combinación de nombres, edades y ciudades: {combinacion_dos}")
+
+for nombre, edad, ciudad in combinacion_dos:
+    print(f"{nombre} tiene {edad} años y vive en {ciudad}.")
 
 # Máximos y mínimos
 
