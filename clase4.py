@@ -57,7 +57,7 @@ if edad >= 18 and dinero >= 10000:
 else:
     print("No puede entrar a la fiesta.")
 
-Ciclo for
+# Ciclo for
 
 for i in range(5):
     print("Iteración número:", i)
