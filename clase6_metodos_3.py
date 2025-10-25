@@ -4,10 +4,11 @@
 class Persona:
     corazon = 1
     pulmones = 2
-    def __init__(self, nombre, color_ojos, color_pelo):
+    def __init__(self, nombre, color_ojos, color_pelo, password):
         self.nombre = nombre
         self.color_ojos = color_ojos
         self.color_pelo = color_pelo
+        self.__password = password  # Atributo privado
 
     def saltar(self, metros):
         if(metros<0):
@@ -19,17 +20,32 @@ class Persona:
 
     def saludar(self):
         print(f"Hola, mi nombre es {self.nombre}.")
-    
+
+    def cambiar_color_ojo(self, nuevo_color):
+        self.color_ojos = nuevo_color
+        print(f"{self.nombre} ha cambiado el color de ojos a {nuevo_color}.")
+
     def tomar_agua(self, litros):
         print(f"{self.nombre} ha tomado {litros} litros de agua.")
+    # Metodo para acceder al atributo privado
+    def get_password(self):
+        return self.__password
+    # Metodo para modificar el atributo privado
+    def set_password(self, nuevo_password):
+        self.__password = nuevo_password
+        print(f"{self.nombre} ha cambiado su contraseña.")
+
 
 nombre = "Andres"
 color_ojos = "Verde"
 color_pelo = "Negro"
-persona1 = Persona(nombre, color_ojos, color_pelo)
+persona1 = Persona(nombre, color_ojos, color_pelo, "123456")
 # atributo
-print("Nombre:", persona1.nombre)
+print("Color de ojor original : ", persona1.color_ojos)
 # Metodo
-persona1.saltar(-5)
-persona1.saltar(1.5)
-persona1.saltar(3)
+persona1.cambiar_color_ojo("Azul")
+# atributo privado
+print(persona1.get_password())
+password1 = input("Escribe la nueva contraseña: ")
+persona1.set_password(password1)
+print(persona1.get_password())
