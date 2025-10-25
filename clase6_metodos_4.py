@@ -32,12 +32,13 @@ class Persona:
         return self.__password
     # Metodo para modificar el atributo privado
     def set_password(self, nuevo_password):
-        print("Aqui va el tamaño de la contraseña: ",len(nuevo_password))
         while((len(nuevo_password) <= 12) or (nuevo_password.isdigit()== True) or nuevo_password.isalpha()== True):
             print("La contraseña no es válida.")
             nuevo_password = input("Escribe una nueva contraseña: ")
-
+        # encriptar la contraseña
+        
         self.__password = nuevo_password
+
 
 nombre = "Andres"
 color_ojos = "Verde"
